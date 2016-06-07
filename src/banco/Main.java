@@ -21,22 +21,11 @@ public class Main {
         System.out.print("Ingrese Su Numero De Cuenta: ");
         int numeroCuenta = entrada.nextInt();
         System.out.print("ingrese Su Nombre: ");
+        
         String cliente = entrada.next();
         System.out.print("Accion que quiere realizar: ");
         int accion = entrada.nextInt();
         
-        cuentaBancaria misAhorros = new cuentaBancaria(numeroCuenta,cliente);
-            
-        
-        
+    }}
        
         
-        
-        
-        
-    }
-       
-        
-    }
-    
-}
