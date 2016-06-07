@@ -6,6 +6,8 @@
 package banco;
 
 import java.util.Scanner;
+import model.newpackage.Cliente;
+import model.newpackage.CuentaBancaria;
 
 /**
  *
@@ -19,13 +21,24 @@ public class Main {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
         System.out.print("Ingrese Su Numero De Cuenta: ");
-        int numeroCuenta = entrada.nextInt();
-        System.out.print("ingrese Su Nombre: ");
         
-        String cliente = entrada.next();
-        System.out.print("Accion que quiere realizar: ");
-        int accion = entrada.nextInt();
-        
-    }}
        
         
+        CuentaBancaria cuenta = new CuentaBancaria(12,"sarai","apellidos");
+        Cliente cliente = cuenta.getCliente();
+        cliente.setFechaDeNacimiento("18/12/96");
+        cliente.setDireccion("calle c");
+        cliente.setOcupacion("estudiante");
+        cliente.setEmail("124@gmail");
+        cliente.setTelefono("123456");
+      
+        System.out.println(cliente.getNombre());
+        System.out.println(cliente.getApellidos());
+        System.out.println(cliente.getFechaDeNacimiento());
+        System.out.println(cliente.getDireccion());
+        System.out.println(cliente.getOcupacion());
+        System.out.println(cliente.getEmail());
+        System.out.println(cliente.getTelefono());
+        
+        
+   }}       

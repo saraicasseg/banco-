@@ -9,14 +9,14 @@ package model.newpackage;
  *
  * @author ewewe
  */
-public class cuentaBancaria {
+public class CuentaBancaria {
     private int numeroCuenta;
-    private String cliente;
+    private Cliente cliente;
     private double saldo;
     
-    public cuentaBancaria(int numeroCuenta, String cliente){
+    public CuentaBancaria(int numeroCuenta, String nombre, String apellidos){
         this.numeroCuenta = numeroCuenta;
-        this.cliente = cliente;
+        this.cliente = new Cliente(nombre, apellidos);
         this.saldo = 0.0;
     }
     public double getSaldo(){
@@ -45,7 +45,12 @@ public class cuentaBancaria {
            
        }
         return false;
-}}
+       
+        }
+       public Cliente getCliente(){
+           return cliente;
+       }
+}
    
     
     
