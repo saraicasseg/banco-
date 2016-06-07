@@ -27,7 +27,7 @@ public class Main {
         CuentaBancaria cuenta = new CuentaBancaria(12,"sarai","apellidos");
         Cliente cliente = cuenta.getCliente();
         cliente.setFechaDeNacimiento("18/12/96");
-        cliente.setDireccion("calle c");
+        cliente.setDireccion("calle a");
         cliente.setOcupacion("estudiante");
         cliente.setEmail("124@gmail");
         cliente.setTelefono("123456");
